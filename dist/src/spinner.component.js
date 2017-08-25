@@ -31,7 +31,7 @@ export { SpinnerComponent };
 SpinnerComponent.decorators = [
     { type: Component, args: [{
                 selector: 'spinner',
-                template: "\n    <div *ngIf=\"show\">\n      <img *ngIf=\"loadingImage\" [src]=\"loadingImage\" />\n      <ng-content></ng-content>\n    </div>\n  "
+                template: "\n    <div *ngIf=\"show\" style=\"position: fixed;width: 100%;height: 100%;z-index: 3000;background: rgba(0, 0, 0, 0.5); \">\n      <img *ngIf=\"loadingImage\" [src]=\"loadingImage\" />\n      <ng-content></ng-content>\n    </div>\n  "
             },] },
 ];
 /** @nocollapse */
